@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>HTML CSS Cheatsheet Starting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="container">Cheatsheet Starting</h1>
+    </div>
+    <main>
+      <div class="sidebar">
+        <section>
+          <details>
+            <summary><a href="#html">1. HTML</a></summary>
+            <ul>
+              <li><a href="#tables">Tables</a></li>
+              <li><a href="#entities">Entities</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary><a href="#css">2. CSS</a></summary>
+            <ul>
+              <li><a href="#selector">Selector</a></li>
+              <li><a href="#properties">Properties</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary><a href="#javascript">3. JavaScript</a></summary>
+            <ul>
+              <li><a href="#functions">Functions</a></li>
+              <li><a href="#methods">Methods</a></li>
+            </ul>
+          </details>
+        </section>
+      </div>
+      <div class="content">
+        <h2 id="html">1. HTML</h2>
+        <h3 id="tables">Tables</h3>
+        <h4>Definition</h4>
+        <p>
+          The HTML table model allows authors to arrange data - text,
+          preformatted text, images, links, forms, form fields, other tables,
+          etc. - into rows and columns of cells.
+        </p>
+        <h4>Examples</h4>
+        <p>
+          There are several tags that are used to create tables in HTML. The
+          main ones are listed below.
+        </p>
+        <table>
+          <thead>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">&lt;table&gt;</span></td>
+              <td>Table</td>
+              <td>The wrapper element for all HTML tables.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;thead&gt;</span></td>
+              <td>Table Head</td>
+              <td>The set of rows containing actual table data.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;tbody&gt;</span></td>
+              <td>Table Body</td>
+              <td>The set of rows containing actual table data.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;tr&gt;</span></td>
+              <td>Table Row</td>
+              <td>The table row container.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;td&gt;</span></td>
+              <td>Table Data</td>
+              <td>The table row container.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;tfoot&gt;</span></td>
+              <td>Table Foot</td>
+              <td>The set of rows defining the footer in a table.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="entities">Entities</h3>
+        <h4>Definition</h4>
+        <p>
+          HTML entities are special characters that are reserved for use in an
+          HTML document. They are used to render reserved characters in HTML.
+        </p>
+        <h4>Examples</h4>
+        <p>
+          There are several entities that are used to render reserved characters
+          in HTML. The main ones are listed below.
+        </p>
+        <table>
+          <thead>
+            <th>Sign</th>
+            <th>Description</th>
+            <th>Entity Name</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;</td>
+              <td>Less than (start of HTML element)</td>
+              <td><span class="code">&amp;lt;</span></td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>Greater than (end of HTML element)</td>
+              <td><span class="code">&amp;gt;</span></td>
+            </tr>
+            <tr>
+              <td>&amp;</td>
+              <td>Ampersand</td>
+              <td><span class="code">&amp;amp;</span></td>
+            </tr>
+            <tr>
+              <td>&quot;</td>
+              <td>Double quote</td>
+              <td><span class="code">&amp;quot;</span></td>
+            </tr>
+            <tr>
+              <td>&apos;</td>
+              <td>Single quote</td>
+              <td><span class="code">&amp;apos;</span></td>
+            </tr>
+            <tr>
+              <td>&cent;</td>
+              <td>Cent</td>
+              <td><span class="code">&amp;cent;</span></td>
+            </tr>
+            <tr>
+              <td>&pound;</td>
+              <td>Pound</td>
+              <td><span class="code">&amp;pound;</span></td>
+            </tr>
+            <tr>
+              <td>&yen;</td>
+              <td>Yen</td>
+              <td><span class="code">&amp;yen;</span></td>
+            </tr>
+            <tr>
+              <td>&euro;</td>
+              <td>Euro</td>
+              <td><span class="code">&amp;euro;</span></td>
+            </tr>
+            <tr>
+              <td>&copy;</td>
+              <td>Copyright</td>
+              <td><span class="code">&amp;copy;</span></td>
+            </tr>
+            <tr>
+              <td>&reg;</td>
+              <td>Registered</td>
+              <td><span class="code">&amp;reg;</span></td>
+            </tr>
+            <tr>
+              <td>&trade;</td>
+              <td>Trademark</td>
+              <td><span class="code">&amp;trade;</span></td>
+            </tr>
+            <tr>
+              <td>&times;</td>
+              <td>Times</td>
+              <td><span class="code">&amp;times;</span></td>
+            </tr>
+            <tr>
+              <td>&divide;</td>
+              <td>Divide</td>
+              <td><span class="code">&amp;divide;</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="css">2. CSS</h2>
+        <h3 id="selector">Selector</h3>
+        <h4>Definition</h4>
+        <p>
+          CSS selectors are used to select the content you want to style.
+          Selectors are the part of CSS rule set that actually selects the
+          content you want to style.
+        </p>
+        <h4>Examples</h4>
+        <p>
+          There are several selectors that are used to select the content you
+          want to style in CSS. The main ones are listed below.
+        </p>
+        <table>
+          <thead>
+            <th>Selector</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">* {}</span></td>
+              <td>Selects all elements</td>
+            </tr>
+            <tr>
+              <td><span class="code">h1 {}</span></td>
+              <td>Selects all <span class="code">&lt;h1&gt;</span> elements</td>
+            </tr>
+            <tr>
+              <td><span class="code">#id {}</span></td>
+              <td>Selects the element with id="id"</td>
+            </tr>
+            <tr>
+              <td><span class="code">.class {}</span></td>
+              <td>Selects all elements with class="class"</td>
+            </tr>
+            <tr>
+              <td><span class="code">element, element {}</span></td>
+              <td>
+                Selects all <span class="code">element</span> elements and all
+                <span class="code">element</span> elements
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">element element {}</span></td>
+              <td>
+                Selects all <span class="code">element</span> elements inside
+                <span class="code">element</span> elements
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">element > element {}</span></td>
+              <td>
+                Selects all <span class="code">element</span> elements where the
+                parent is a <span class="code">element</span> element
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">element + element {}</span></td>
+              <td>
+                Selects all <span class="code">element</span> elements that are
+                placed immediately after
+                <span class="code">element</span> elements
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">element ~ element {}</span></td>
+              <td>
+                Selects every <span class="code">element</span> element that is
+                preceded by a <span class="code">element</span> element
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">:link {}</span></td>
+              <td>Selects all unvisited links</td>
+            </tr>
+            <tr>
+              <td><span class="code">:visited {}</span></td>
+              <td>Selects all visited links</td>
+            </tr>
+            <tr>
+              <td><span class="code">:active {}</span></td>
+              <td>Selects the active link</td>
+            </tr>
+            <tr>
+              <td><span class="code">:hover {}</span></td>
+              <td>Selects links on mouse over</td>
+            </tr>
+            <tr>
+              <td><span class="code">:focus {}</span></td>
+              <td>Selects the input element that has focus</td>
+            </tr>
+            <tr>
+              <td><span class="code">:first-child {}</span></td>
+              <td>
+                Selects every <span class="code">element</span> element that is
+                the first child of its parent
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">:nth-child(n) {}</span></td>
+              <td>
+                Selects every <span class="code">element</span> element that is
+                the nth child of its parent
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">:nth-last-child(n) {}</span></td>
+              <td>
+                Selects every <span class="code">element</span> element that is
+                the nth child of its parent, counting from the last child
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">:first-of-type {}</span></td>
+              <td>
+                Selects every <span class="code">element</span> element that is
+                the first <span class="code">element</span> element of its
+                parent
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="properties">Properties</h3>
+        <h4>Definition</h4>
+        <p>
+          CSS properties are used to specify the style of the HTML elements.
+          They are used to set the values of the style sheet. CSS properties are
+          used to set the look of the HTML elements.
+        </p>
+        <h4>Examples</h4>
+        <p>
+          There are several properties that are used to specify the style of the
+          HTML elements in CSS. The main ones are listed below.
+        </p>
+        <table>
+          <thead>
+            <th>Property</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">color</span></td>
+              <td>Specifies the text color of an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">font-family</span></td>
+              <td>Specifies the font of an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">font-size</span></td>
+              <td>Specifies the size of the font</td>
+            </tr>
+            <tr>
+              <td><span class="code">font-style</span></td>
+              <td>Specifies the style of the font</td>
+            </tr>
+            <tr>
+              <td><span class="code">font-weight</span></td>
+              <td>Specifies the weight of the font</td>
+            </tr>
+            <tr>
+              <td><span class="code">text-align</span></td>
+              <td>Specifies the horizontal alignment of text</td>
+            </tr>
+            <tr>
+              <td><span class="code">text-decoration</span></td>
+              <td>Specifies the decoration added to text</td>
+            </tr>
+            <tr>
+              <td><span class="code">text-transform</span></td>
+              <td>Specifies the capitalization of text</td>
+            </tr>
+            <tr>
+              <td><span class="code">letter-spacing</span></td>
+              <td>Specifies the space between characters in a text</td>
+            </tr>
+            <tr>
+              <td><span class="code">line-height</span></td>
+              <td>Specifies the line height</td>
+            </tr>
+            <tr>
+              <td><span class="code">background-color</span></td>
+              <td>Specifies the background color of an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">background-image</span></td>
+              <td>Specifies the background image of an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">background-repeat</span></td>
+              <td>Specifies how the background image should be repeated</td>
+            </tr>
+            <tr>
+              <td><span class="code">background-attachment</span></td>
+              <td>
+                Specifies whether the background image should be fixed or scroll
+                with the rest of the page
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">background-position</span></td>
+              <td>Specifies the position of the background image</td>
+            </tr>
+            <tr>
+              <td><span class="code">border</span></td>
+              <td>
+                A shorthand property for setting all the border properties in
+                one declaration
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">border-color</span></td>
+              <td>Specifies the color of the border</td>
+            </tr>
+            <tr>
+              <td><span class="code">border-style</span></td>
+              <td>Specifies the style of the border</td>
+            </tr>
+            <tr>
+              <td><span class="code">border-width</span></td>
+              <td>Specifies the width of the border</td>
+            </tr>
+            <tr>
+              <td><span class="code">border-radius</span></td>
+              <td>
+                A shorthand property for setting all the four border-*-radius
+                properties
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">padding</span></td>
+              <td>
+                A shorthand property for setting all the padding properties in
+                one declaration
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">margin</span></td>
+              <td>
+                A shorthand property for setting all the margin properties in
+                one declaration
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">width</span></td>
+              <td>Specifies the width of an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">height</span></td>
+              <td>Specifies the height of an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">display</span></td>
+              <td>Specifies the type of rendering box used for an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">visibility</span></td>
+              <td>Specifies whether or not an element is visible</td>
+            </tr>
+            <tr>
+              <td><span class="code">overflow</span></td>
+              <td>
+                Specifies what happens if content overflows an element's box
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">position</span></td>
+              <td>
+                Specifies the type of positioning method used for an element
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">z-index</span></td>
+              <td>Specifies the stack order of an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">float</span></td>
+              <td>Specifies whether or not a box should float</td>
+            </tr>
+            <tr>
+              <td><span class="code">clear</span></td>
+              <td>
+                Specifies what elements can float beside the cleared element and
+                on which side
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">left</span></td>
+              <td>Specifies the left position of a positioned element</td>
+            </tr>
+            <tr>
+              <td><span class="code">right</span></td>
+              <td>Specifies the right position of a positioned element</td>
+            </tr>
+            <tr>
+              <td><span class="code">top</span></td>
+              <td>Specifies the top position of a positioned element</td>
+            </tr>
+            <tr>
+              <td><span class="code">bottom</span></td>
+              <td>Specifies the bottom position of a positioned element</td>
+            </tr>
+            <tr>
+              <td><span class="code">animation</span></td>
+              <td>
+                A shorthand property for setting all the animation properties in
+                one declaration
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">transition</span></td>
+              <td>
+                A shorthand property for setting all the transition properties
+                in one declaration
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">transform</span></td>
+              <td>Applies a 2D or 3D transformation to an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">box-shadow</span></td>
+              <td>Attaches one or more shadows to an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">filter</span></td>
+              <td>
+                Defines effects (e.g. blurring or color shifting) on an element
+                before the element is displayed
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="javascript">3. JavaScript</h2>
+        <h3 id="functions">Functions</h3>
+        <h4>Definition</h4>
+        <p>
+          A JavaScript function is a block of code designed to perform a
+          particular task. It is executed when "something" invokes it (calls
+          it).
+        </p>
+        <h4>Examples</h4>
+        <p>
+          There are several functions that are used to perform a particular task
+          in JavaScript. The main ones are listed below.
+        </p>
+        <table>
+          <thead>
+            <th>Function</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">alert()</span></td>
+              <td>Displays an alert box with a message and an OK button</td>
+            </tr>
+            <tr>
+              <td><span class="code">prompt()</span></td>
+              <td>Displays a dialog box that prompts the visitor for input</td>
+            </tr>
+            <tr>
+              <td><span class="code">confirm()</span></td>
+              <td>
+                Displays a dialog box with a specified message, along with an OK
+                and a Cancel button
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">console.log()</span></td>
+              <td>Writes a message to the console</td>
+            </tr>
+            <tr>
+              <td><span class="code">document.write()</span></td>
+              <td>Writes HTML expressions or JavaScript code to a document</td>
+            </tr>
+            <tr>
+              <td><span class="code">open()</span></td>
+              <td>Opens a new browser window</td>
+            </tr>
+            <tr>
+              <td><span class="code">close()</span></td>
+              <td>Closes the current browser window</td>
+            </tr>
+            <tr>
+              <td><span class="code">write() and writeln()</span></td>
+              <td>Writes HTML expressions or JavaScript code to a document</td>
+            </tr>
+            <tr>
+              <td><span class="code">getElementById()</span></td>
+              <td>
+                Returns the element that has the ID attribute with the specified
+                value
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">getElementsByTagName()</span></td>
+              <td>
+                Returns a collection of all elements in the document with the
+                specified tag name
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">getElementsByClassName()</span></td>
+              <td>
+                Returns a collection of all elements in the document with the
+                specified class name
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">removeChild()</span></td>
+              <td>Removes a child node from an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">replaceChild()</span></td>
+              <td>Replaces a child node in an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">appendChild()</span></td>
+              <td>Adds a new child node to an element</td>
+            </tr>
+            <tr>
+              <td><span class="code">addEventListener()</span></td>
+              <td>Attaches an event handler to the specified element</td>
+            </tr>
+            <tr>
+              <td><span class="code">removeEventListener()</span></td>
+              <td>
+                Removes an event handler that has been attached with the
+                addEventListener() method
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
